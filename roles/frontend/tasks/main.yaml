@@ -2,7 +2,11 @@
   become: yes
   hosts: frontend
   tasks:
- 
+  - name: install nginx server
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
+
 # - name: install nginx server
 #   ansible.builtin.dnf:
 #     name: nginx
