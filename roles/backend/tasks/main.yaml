@@ -39,7 +39,7 @@
     
 - name: copy backend services
   ansible.builtin.template:
-    src: backend.service.j2
+    src: backend.service.js
     dest: /etc/systemd/system/backend.service
 
 - name: install python mysql dependencies
